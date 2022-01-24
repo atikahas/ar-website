@@ -157,12 +157,7 @@
         <!--================ Facilities Area  =================-->
 
         <!--================ Testimonial Area  =================-->
-        <section class="testimonial_area section_gap">
-            <div class="container">
-                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-50cf2104-8816-44b5-b9ea-27d553de4be5"></div>
-            </div>
-        </section>
+        <iframe src="review.html" style="border:none;" width="100%"  onload="resizeIframe(this)"></iframe>
         <!--================ Testimonial Area  =================-->
 
         <!--================ Accomodation Area  =================-->
@@ -274,5 +269,11 @@
         <script src="js/stellar.js"></script>
         <script src="vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="js/custom.js"></script>
+        <script type="text/javascript">
+            function resizeIframe(iframe) {
+              iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+              window.requestAnimationFrame(() => resizeIframe(iframe));
+            }
+          </script>  
     </body>
 </html>
